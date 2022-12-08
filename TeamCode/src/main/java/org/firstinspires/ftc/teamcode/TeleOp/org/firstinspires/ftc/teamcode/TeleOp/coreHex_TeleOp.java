@@ -27,8 +27,8 @@ public class coreHex_TeleOp extends LinearOpMode{
     public void climbOpMode(){
         double coreHexPower;
 
-        double up = gamepad1.right_trigger;
-        double down = gamepad1.left_trigger;
+        double up = gamepad2.right_trigger;
+        double down = gamepad2.left_trigger;
 
         coreHexPower = Range.clip(up + down, -1.0, 1.0);
 

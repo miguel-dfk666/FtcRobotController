@@ -27,7 +27,7 @@ public class coreHex_TeleOp extends LinearOpMode{
     public void climbOpMode(){
         double coreHexPower;
 
-        double up = gamepad2.right_trigger;
+        double up = gamepad.right_trigger;
         double down = gamepad2.left_trigger;
 
         coreHexPower = Range.clip(up + down, -1.0, 1.0);
@@ -35,7 +35,7 @@ public class coreHex_TeleOp extends LinearOpMode{
         coreHex.setPower(coreHexPower);
 
         telemetry.addData("Status", "Run Time: " + runtime.toString());
-        telemetry.addData("Motors", "left (%.2f), right (%.2f)", coreHexPower);
+        telemetry.addData("Motors", "coreHex(%.2f)", coreHexPower);
         telemetry.update();
     }
 }
